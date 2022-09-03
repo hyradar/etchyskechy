@@ -1,0 +1,78 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: lightgreen;
+    height: 900px;
+    display: grid;
+    grid-template-areas: 
+    'banner banner banner'
+    'sidebar maingrid maingrid'
+    'footer footer footer'
+    ;
+    
+    grid-template-columns: 1fr 2fr;
+    grid-template-rows: 100px 2fr 80px;
+    
+}
+
+header,
+footer,
+main,
+nav {
+    background-color: steelblue;
+    color: white;
+    padding: 20px;
+    border: 1px solid skyblue;
+}
+
+header {
+    grid-area: banner;
+    text-align: center;
+    vertical-align: middle;
+    line-height: 60px;
+    background-color: #85DDCB;
+}
+
+nav {
+    grid-area: sidebar;
+    background-color: #E8A87C;
+}
+
+main {
+    grid-area: maingrid;
+    background-color: #C38D9E;
+}
+
+footer {
+    grid-area: footer;
+    background-color: #41b3a3;
+}
+
+.gamegrid {
+    height: 480px;
+    width: 480px;
+    background-color: red;
+    display: grid;
+    grid-template-columns: repeat(16, 1fr);
+    grid-template-rows: repeat(16, 1fr);
+    
+}
+
+.item {
+    background-color: white;
+    height: 30px;
+    width: 30px;
+    border: 1px solid black;
+
+    /* div.style.height = "calc (100% / 16)";
+       div.style.width = "calc(100% / 16)"; */
+
+}
+
+.gamegrid .item:hover {
+    background-color: blue;
+}
