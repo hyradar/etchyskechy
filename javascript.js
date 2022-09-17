@@ -21,3 +21,22 @@ for (let i = 0; i < nodeList.length; i ++) {
 function changeColor(event) {
     event.target.style.backgroundColor = "blue";
 }
+
+//common mistake I make: Forgetting the . when referencing classes with quertySeleactor
+let output = document.querySelector('.gridrange');
+let grid = document.querySelector('.slider').value;
+if (output) {
+    output.innerHTML = grid + " X " + grid;
+}
+
+document.querySelector('.slider').addEventListener('input', updateGrid);
+
+function updateGrid() {
+    let output = document.querySelector('.gridrange');
+    let grid = document.querySelector('.slider').value;
+    output.innerHTML = grid + " X " + grid;
+}
+
+function print() {
+    console.log('test');
+}
