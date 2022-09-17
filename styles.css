@@ -55,14 +55,14 @@ footer {
 .gamegrid {
     height: 480px;
     width: 480px;
-    background-color: red;
+    background-color: green;
     display: grid;
     grid-template-columns: repeat(16, 1fr);
     grid-template-rows: repeat(16, 1fr);
     
 }
 
-.item {
+.blocks {
     background-color: white;
     height: 30px;
     width: 30px;
@@ -73,6 +73,6 @@ footer {
 
 }
 
-.gamegrid .item:hover {
+/* .blocks:hover {
     background-color: blue;
-}
+} */
