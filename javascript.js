@@ -11,9 +11,23 @@ globalBrush = updateGlobalBrush(globalBrush);
 globalBrush = updateGlobalBrush("rainwbowBrush");
 
 
-
 //Adds Event Listeners
 document.querySelector('.slider').addEventListener('input', updateGrid);
+
+//Take a break and then look at things step by step
+//For instance maybe make an "initial grid" function 
+//to seperate the initial grid from updating it
+//might make it easier.
+
+//also, instead of deleting and then creating a new grid, maybe just set
+//the background color to all the grid to white
+//that way you don't have to attach a new event listener to them
+//theoretically they'll still keep their old one, from the rainbow brush for instance
+
+
+
+
+
 
 
 //Grid Functions
