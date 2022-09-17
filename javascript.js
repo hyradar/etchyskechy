@@ -1,41 +1,10 @@
 
 updateGrid();
-// defaultGrid();
-//Create default grid
-// function defaultGrid() {
 
-//     for (let i = 0; i < 25 * 25; i ++) {
-        
-//         const mygrid = document.querySelector(".gamegrid");
-//         let div = document.createElement('div');
-//         div.className = "blocks";
-//         div.style.height = "20px";
-//         div.style.width = "20px";
-//         mygrid.appendChild(div);
-    
-//     }
-
-//     addMouseOver();
-// }
-
-
-
-
-
-
-//common mistake I make: Forgetting the . when referencing classes with quertySeleactor
-let output1 = document.querySelector('.gridrange');
-let grid1 = document.querySelector('.slider').value;
-if (output1) {
-    output1.innerHTML = grid1 + " X " + grid1;
-}
-
+//Adds Event Listener to Slider Element
 document.querySelector('.slider').addEventListener('input', updateGrid);
 
-
-// console.log(document.querySelector('.slider').value);
-
-function updateGrid(grid1) {
+function updateGrid() {
     let output = document.querySelector('.gridrange');
     let grid = document.querySelector('.slider').value;
     output.innerHTML = grid + " X " + grid;
@@ -44,7 +13,6 @@ function updateGrid(grid1) {
 }
 
 function removeGrid() {
-    console.log("for loop running");
     const element = document.querySelector('.gamegrid');
     while (element.firstChild) {
         element.removeChild(element.lastChild);
@@ -52,8 +20,7 @@ function removeGrid() {
 }
 
 function updateBlock(grid) {
-
-    console.log(grid);
+    //Create Grid
     for (let i = 0; i < grid * grid; i ++) {
         
         let div = document.createElement('div');
