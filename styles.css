@@ -53,24 +53,22 @@ footer {
 }
 
 .gamegrid {
-    height: 480px;
-    width: 480px;
+    height: 500px;
+    width: 500px;
     background-color: green;
     display: grid;
-    grid-template-columns: repeat(16, 1fr);
-    grid-template-rows: repeat(16, 1fr);
+    /* grid-template-columns: repeat(50, 1fr);
+    grid-template-rows: repeat(50, 1fr); */
+    grid-template-columns: repeat(50, 1fr);
+    grid-template-rows: repeat(50, 1fr);
     
 }
 
 .blocks {
     background-color: white;
-    height: 30px;
-    width: 30px;
+    /* height: 10px;
+    width: 10px; */
     border: 1px solid black;
-
-    /* div.style.height = "calc (100% / 16)";
-       div.style.width = "calc(100% / 16)"; */
-
 }
 
 /* .blocks:hover {
